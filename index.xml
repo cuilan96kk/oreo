@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>Oreo</name>
+		<version>0.1</version>
+		<description>
+			<![CDATA[ a responsive skin for Tistory blog ]]>
+		</description>
+		<license>
+			<![CDATA[ MIT License ]]>
+		</license>
+	</information>
+	<author>
+		<name>dkim</name>
+		<homepage>http://dgkims5360.tistory.com</homepage>
+		<email>dgkim5360@gmail.com</email>
+	</author>
+	<default>
+		<recentEntries>5</recentEntries>
+		<recentComments>5</recentComments>
+		<recentTrackbacks>5</recentTrackbacks>
+		<itemsOnGuestbook>10</itemsOnGuestbook>
+		<tagsInCloud>30</tagsInCloud>
+		<sortInCloud>3</sortInCloud>
+		<expandComment>1</expandComment>
+		<expandTrackback>0</expandTrackback>
+		<lengthOfRecentNotice>25</lengthOfRecentNotice>
+		<lengthOfRecentEntry>27</lengthOfRecentEntry>
+		<lengthOfRecentComment>25</lengthOfRecentComment>
+		<lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+		<lengthOfLink>30</lengthOfLink>
+		<showListOnCategory>1</showListOnCategory>
+		<showListOnArchive>1</showListOnArchive>
+		<commentMessage>
+			<none>0</none>
+			<single>1</single>
+		</commentMessage>
+		<trackbackMessage>
+			<none>0</none>
+			<single>1</single>
+		</trackbackMessage>
+		<tree>
+			<color>333333</color>
+			<bgColor>ffffff</bgColor>
+			<activeColor>333333</activeColor>
+			<activeBgColor>ffffff</activeBgColor>
+			<labelLength>27</labelLength>
+			<showValue>0</showValue>
+		</tree>
+		<contentWidth>750</contentWidth>
+	</default>
+</skin>
