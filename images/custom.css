@@ -41,6 +41,7 @@ ul.tt_category ul.category_list {
 }
 ul.tt_category ul.category_list > li {
   display: inline;
+  float: left;
 }
 ul.tt_category ul.category_list > li > a.link_item {
   padding: 5px 10px;
