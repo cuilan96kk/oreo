@@ -30,21 +30,28 @@ ul.list-style-none {
 /* tistory blog category list */
 ul.tt_category {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 ul.tt_category > li > a.link_tit {
   display: none;
 }
 ul.tt_category ul.category_list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 ul.tt_category ul.category_list > li {
-  display: inline;
+  position: relative;
+  display: block;
   float: left;
 }
 ul.tt_category ul.category_list > li > a.link_item {
+  position: relative;
+  display: block;
+  border-radius: 4px;
   padding: 5px 10px;
+}
+ul.tt_category ul.category_list > li > a.link_item:hover {
+  background-color: #eee;
 }
 ul.tt_category ul.category_list ul.sub_category_list,
 ul.tt_category .c_cnt {
