@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width,target-densitydpi=medium-dpi">
 		<meta name="description" content="[##_blog_url_##]::[##_title_##]::[##_page_title_##]::[##_blogger_##]">
+		<meta name="google-site-verification" content="AY0PxRTB0iKXNcTtODD9ewedIkBVdg9bpGxTRY4f10o"/>
 		<title>[##_page_title_##] :: [##_title_##]</title>
 		<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
 		<link rel="stylesheet" href="./images/font.css">
@@ -76,7 +77,7 @@
 						<h3>위치 로그 페이지가 없습니다.</h3>
 					</div>
 				</s_local>
-				
+
 				<s_list>
 					<div class="article">
 						<h4>
@@ -84,7 +85,7 @@
 						</h4>
 					</div>
 				</s_list>
-				
+
 				<s_notice_rep>
 					<s_index_article_rep>
 						<div class="article">
@@ -92,10 +93,11 @@
 								<img src="[##_notice_rep_thumbnail_url_##]" class="img-rounded thumbnail pull-right">
 							</s_notice_rep_thumbnail>
 							<h4>
-								<a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
-								<small>[##_notice_rep_category_##] / [##_notice_rep_date_##]</small>
+								<a href="[##_notice_rep_link_##]"><i class="fa fa-exclamation"></i> [##_notice_rep_title_##]</a>
 							</h4>
-							<p>[##_notice_rep_summary_##]</p>
+							<h6>
+								<i class="fa fa-clock-o"></i> [##_notice_rep_date_##]
+							</h6>
 							<div class="clearfix"></div>
 						</div>
 					</s_index_article_rep>
@@ -116,7 +118,7 @@
 						</div>
 					</s_permalink_article_rep>
 				</s_notice_rep>
-				
+
 				<s_article_protected>
 					<s_index_article_rep>
 						<div class="article">
@@ -139,24 +141,29 @@
 					<s_permalink_article_rep>
 						<div class="article">
 							<div class="page-header">
-								<h2>
+								<h1>
 									<i class="fa fa-lock"></i> [##_article_rep_title_##]
-								</h2>
+								</h1>
 								<h6><a href="[##_article_rep_category_link_##]"><i class="fa fa-list-ul"></i> [##_article_rep_category_##]</a> <i class="fa fa-clock-o"></i> [##_article_rep_date_##]</h6>
 							</div>
 							<div class="article-pager">
-							<form onsubmit="[##_article_disolve_##]">
-								<p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
-								<div class="row">
-									<div class="col-xs-9">
-										<input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" class="form-control"/>
+								<form onsubmit="[##_article_disolve_##]">
+									<p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+									<div class="row">
+										<div class="col-xs-9">
+											<input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" class="form-control"/>
+										</div>
+										<div class="col-xs-3 text-right">
+											<button type="submit" class="btn btn-primary"><i class="fa fa-arrow-right"></i></button>
+										</div>
 									</div>
-									<div class="col-xs-3 text-right">
-										<button type="submit" class="btn btn-primary"><i class="fa fa-arrow-right"></i></button>
-									</div>
-								</div>
-							</form>
+								</form>
 							</div>
+							<s_tag_label>
+								<h5 class="article-tags margin-bottom-30"><i class="fa fa-tags"></i>
+									[##_tag_label_rep_##]
+								</h5>
+							</s_tag_label>
 						</div>
 					</s_permalink_article_rep>
 				</s_article_protected>
@@ -205,7 +212,6 @@
 							<div class="article-pager">
 								<p>[##_article_rep_desc_##]</p>
 							</div>
-
 							<s_tag_label>
 								<h5 class="article-tags margin-bottom-30"><i class="fa fa-tags"></i>
 									[##_tag_label_rep_##]
@@ -307,11 +313,10 @@
 								</s_rp_input_form>
 
 							</s_rp>
-
 						</div>
 					</s_permalink_article_rep>
 				</s_article_rep>
-				
+
 				<s_tag>
 					<div class="article">
 						<h4><i class="fa fa-tags"></i> 태그</h4>
@@ -400,7 +405,6 @@
 						</s_guest_container>
 					</div>
 				</s_guest>
-
 				<s_paging>
 					<nav aria-label="Page navigation" class="article-pager pull-right">
 						<ul class="pagination">
@@ -421,102 +425,101 @@
 							</li>
 						</ul>
 					</nav>
+					<div class="clearfix"></div>
 				</s_paging>
 			</section>
 
 			<section class="container margin-bottom-20" id="sidebar">
 				<div class="article">
 					<div class="row">
-						<s_sidebar>
-							<s_sidebar_element>
-								<!-- 최근에 올라온 글 -->
-								<div class="col-sm-6">
-									<div class="well">
-										<h3 class="margin-top-0 pull-left" title="최근에 올라온 글"><i class="fa fa-pencil-square"></i></h3>
-										<ul class="list-style-none">
-											<s_rctps_rep>
-												<li>
-													<a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
-													<small>[##_rctps_rep_rp_cnt_##]</small>
-												</li>
-											</s_rctps_rep>
-										</ul>
-										<div class="clearfix"></div>
-									</div>
+						<s_sidebar_element>
+							<!-- 최근에 올라온 글 -->
+							<div class="col-sm-6">
+								<div class="well">
+									<h3 class="margin-top-0 pull-left" title="최근에 올라온 글"><i class="fa fa-pencil-square"></i></h3>
+									<ul class="list-style-none">
+										<s_rctps_rep>
+											<li>
+												<a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+												<small>[##_rctps_rep_rp_cnt_##]</small>
+											</li>
+										</s_rctps_rep>
+									</ul>
+									<div class="clearfix"></div>
 								</div>
-							</s_sidebar_element>
+							</div>
+						</s_sidebar_element>
 
-							<s_sidebar_element>
-								<!-- 최근에 달린 댓글 -->
-								<div class="col-sm-6">
-									<div class="well">
-										<h3 class="margin-top-0 pull-left" title="최근에 달린 댓글"><i class="fa fa-commenting"></i></h3>
-										<ul class="list-style-none">
-											<s_rctrp_rep>
-												<li>
-													<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
-													<small class="pull-right">
-														<i class="fa fa-user"></i> [##_rctrp_rep_name_##]
-														<i class="fa fa-clock-o"></i> [##_rctrp_rep_time_##]
-													</small>
-												</li>
-											</s_rctrp_rep>
-										</ul>
-										<div class="clearfix"></div>
-									</div>
+						<s_sidebar_element>
+							<!-- 최근에 달린 댓글 -->
+							<div class="col-sm-6">
+								<div class="well">
+									<h3 class="margin-top-0 pull-left" title="최근에 달린 댓글"><i class="fa fa-commenting"></i></h3>
+									<ul class="list-style-none">
+										<s_rctrp_rep>
+											<li>
+												<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
+												<small class="pull-right">
+													<i class="fa fa-user"></i> [##_rctrp_rep_name_##]
+													<i class="fa fa-clock-o"></i> [##_rctrp_rep_time_##]
+												</small>
+											</li>
+										</s_rctrp_rep>
+									</ul>
+									<div class="clearfix"></div>
 								</div>
-							</s_sidebar_element>
+							</div>
+						</s_sidebar_element>
 
-							<s_sidebar_element>
-								<!-- tag cloud -->
-								<div class="col-sm-6">
-									<div class="well">
-										<h3 class="margin-top-0 pull-left" title="태그"><i class="fa fa-tags"></i></h3>
-										<div style="padding-left:30px">
-											<s_random_tags>
-												<a href="[##_tag_link_##]" class="[##_tag_class_##]">
-													<span class="label">[##_tag_name_##]</span>
-												</a>
-											</s_random_tags>
-										</div>
-										<div class="clearfix"></div>
+						<s_sidebar_element>
+							<!-- tag cloud -->
+							<div class="col-sm-6">
+								<div class="well">
+									<h3 class="margin-top-0 pull-left" title="태그"><i class="fa fa-tags"></i></h3>
+									<div style="padding-left:30px">
+										<s_random_tags>
+											<a href="[##_tag_link_##]" class="[##_tag_class_##]">
+												<span class="label">[##_tag_name_##]</span>
+											</a>
+										</s_random_tags>
 									</div>
+									<div class="clearfix"></div>
 								</div>
-							</s_sidebar_element>
+							</div>
+						</s_sidebar_element>
 
-							<s_sidebar_element>
-								<!-- 글 보관함 -->
-								<div class="col-xs-6 col-sm-3">
-									<div class="well">
-										<h3 class="margin-top-0 pull-left" title="글 보관함"><i class="fa fa-archive"></i></h3>
-										<ul style="list-style:none">
-											<s_archive_rep>
-												<li>
-													<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] </a>
-													<span class="badge">[##_archive_rep_count_##]</span>
-												</li>
-											</s_archive_rep>
-										</ul>
-										<div class="clearfix"></div>
-									</div>
+						<s_sidebar_element>
+							<!-- 글 보관함 -->
+							<div class="col-xs-6 col-sm-3">
+								<div class="well">
+									<h3 class="margin-top-0 pull-left" title="글 보관함"><i class="fa fa-archive"></i></h3>
+									<ul style="list-style:none">
+										<s_archive_rep>
+											<li>
+												<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] </a>
+												<span class="badge">[##_archive_rep_count_##]</span>
+											</li>
+										</s_archive_rep>
+									</ul>
+									<div class="clearfix"></div>
 								</div>
-							</s_sidebar_element>
+							</div>
+						</s_sidebar_element>
 
-							<s_sidebar_element>
-								<!-- 방문자수 -->
-								<div class="col-xs-6 col-sm-3">
-									<div class="well">
-										<h3 class="pull-left" title="방문자 수" style="margin-top:0"><i class="fa fa-line-chart"></i></h3>
-										<div style="padding-left:40px">
-											오늘 <span class="badge">[##_count_today_##]</span><br/>
-											어제 <span class="badge">[##_count_yesterday_##]</span><br/>
-											전체 <span class="badge">[##_count_total_##]</span><br/>
-										</div>
-										<div class="clearfix"></div>								
+						<s_sidebar_element>
+							<!-- 방문자수 -->
+							<div class="col-xs-6 col-sm-3">
+								<div class="well">
+									<h3 class="pull-left" title="방문자 수" style="margin-top:0"><i class="fa fa-line-chart"></i></h3>
+									<div style="padding-left:40px">
+										오늘 <span class="badge">[##_count_today_##]</span><br/>
+										어제 <span class="badge">[##_count_yesterday_##]</span><br/>
+										전체 <span class="badge">[##_count_total_##]</span><br/>
 									</div>
+									<div class="clearfix"></div>								
 								</div>
-							</s_sidebar_element>
-						</s_sidebar>
+							</div>
+						</s_sidebar_element>
 					</div>
 				</div>
 			</section>
@@ -536,5 +539,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="./images/bootstrap.min.js"></script>
 		<script src="./images/script.js"></script>
+		<script async
+						src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>
 	</body>
 </html>
