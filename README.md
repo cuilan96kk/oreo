@@ -10,11 +10,18 @@ _a responsive skin for Tistory Blog_
 ###사용한 패키지
 1. [Jquery](https://jquery.com)
 2. [Bootstrap](http://getbootstrap.com)
-3. [Font Awesome](http://fontawesome.io)
 
 ###Release Log
+####ver 0.2
+* Font Awesome 제거, 대신 Bootstrap glyphicon으로 대체
+* 유지 보수 가능한 선에서 최소화(minify)
+* 폴더 구조 변경
+ 1. images 폴더 제거: 어짜피 티스토리에서 업로드할 때 자동으로 images 폴더가 만들어지므로
+ 2. verbose 폴더 추가: 직접 편집하기 쉽도록 최소화되지 않은 파일을 추가
+* 버튼 그룹 디자인 반영
+
 ####ver 0.1
-Bootstrap 커스텀 스타일을 그대로 사용
+Bootstrap 커스텀 스타일 사용
 * 상단 헤더
  1. 좌측 블로거 썸네일, 우측 메뉴(공지, 태그, 방명록, 검색, RSS)
  2. 그 밑에 카테고리 메뉴: 상위 메뉴만 보임
