@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width,target-densitydpi=medium-dpi">
+		<meta name="description" content="[##_blog_url_##]::[##_title_##]::[##_page_title_##]::[##_blogger_##]">
+		<meta name="google-site-verification" content="AY0PxRTB0iKXNcTtODD9ewedIkBVdg9bpGxTRY4f10o"/>
+		<title>[##_page_title_##] :: [##_title_##]</title>
+		<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+		<link rel="stylesheet" href="./images/font.css">
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./images/custom.min.css">
+	</head>
+	<body id="[##_body_id_##]">
+		<s_t3>
+			<section style="position:fixed;right:20px;top:22vh" class="visible-lg-block">
+			<!-- your adsense code -->
+			</section>
+			<section class="container tab-content margin-bottom-30" id="header" style="margin-top:80px">
+				<div class="tab-pane fade in active" id="tab-header">
+					<div class="row">
+						<div class="col-sm-6">
+							<a href="/"><img src="[##_image_##]" width="50" height="50" class="img-circle" alt="프로필사진"></a>
+							<h4 class="blog-title">
+								<a href="[##_blog_link_##]">[##_title_##]</a>
+								<small>[##_blogger_##]</small>
+							</h4>
+						</div>
+						<div class="col-sm-6">
+							<ul class="nav nav-pills pull-right" role="tablist">
+								<li title="공지사항"><a href="/notice"><i class="glyphicon glyphicon-info-sign"></i></a></li>
+								<li title="태그"><a href="[##_taglog_link_##]"><i class="glyphicon glyphicon-tags"></i></a></li>
+								<li title="방명록"><a href="[##_guestbook_link_##]"><i class="glyphicon glyphicon-envelope"></i></a></li>
+								<li title="검색"><a href="#tab-search" data-toggle="tab" aria-controls="tab-search" role="tab"><i class="glyphicon glyphicon-search"></i></a></li>
+								<li title="RSS 구독"><a href="[##_rss_url_##]" onclick="window.open(this.href); return false"><i class="glyphicon glyphicon-bullhorn"></i></a>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade article-pager" id="tab-search">
+					<s_search>
+						<form action="#" onsubmit="[##_search_onclick_submit_##]">
+							<div class="row">
+								<div class="col-sm-10" style="height:50px">
+									<input type="text" name="[##_search_name_##]" value="[##_search_text_##]" class="form-control form-plain" style="height:45px" placeholder="검색어를 입력해주세요" required/>
+								</div>
+								<div class="col-sm-2 text-right" style="height:40px">
+									<button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+									<a href="#tab-header" class="btn btn-primary" data-toggle="tab" aria-controls="tab-header" role="tab"><i class="glyphicon glyphicon-remove"></i></a>
+								</div>
+							</div>
+						</form>
+					</s_search>
+				</div>
+			</section>
+
+			<nav class="container" id="navigation">
+				<div class="category margin-bottom-10">
+					[##_category_list_##]
+					<div class="clearfix"></div>
+				</div>
+			</nav>
+
+			<section class="container" id="notices">
+				<s_rct_notice>
+					<ul class="notice-list margin-bottom-10">
+						<s_rct_notice_rep>
+							<li>
+								<a href="[##_notice_rep_link_##]"><i class="glyphicon glyphicon-info-sign"></i> [##_notice_rep_title_##]</a>
+							</li>
+						</s_rct_notice_rep>
+					</ul>
+				</s_rct_notice>
+			</section>
+
+			<section class="container margin-bottom-10">
+			<!-- your adsense code -->
+			</section>
+
+			<section class="container" id="articles">
+				<s_local>
+					<div class="article">
+						<h3>위치 로그 페이지가 없습니다.</h3>
+					</div>
+				</s_local>
+
+				<s_list>
+					<div class="article">
+						<h4>
+							<i class="glyphicon glyphicon-search"></i> <span class="label label-primary">[##_list_conform_##] <span class="badge">[##_list_count_##]</span></span>
+						</h4>
+					</div>
+				</s_list>
+
+				<s_notice_rep>
+					<s_index_article_rep>
+						<div class="article">
+							<s_notice_rep_thumbnail>
+								<img src="[##_notice_rep_thumbnail_url_##]" class="img-rounded thumbnail pull-right">
+							</s_notice_rep_thumbnail>
+							<h4>
+								<a href="[##_notice_rep_link_##]"><i class="glyphicon glyphicon-info-sign"></i> [##_notice_rep_title_##]</a>
+							</h4>
+							<h6>
+								<i class="glyphicon glyphicon-time"></i> [##_notice_rep_date_##]
+							</h6>
+							<div class="clearfix"></div>
+						</div>
+					</s_index_article_rep>
+
+					<s_permalink_article_rep>
+						<div class="article">
+							<div class="page-header">
+								<h2>
+									<i class="glyphicon glyphicon-info-sign"></i> [##_notice_rep_title_##]
+								</h2>
+								<h6>
+									<i class="glyphicon glyphicon-time"></i> [##_notice_rep_date_##]
+								</h6>
+							</div>
+							<div class="article-pager">
+								<p>[##_notice_rep_desc_##]</p>
+							</div>
+						</div>
+					</s_permalink_article_rep>
+				</s_notice_rep>
+
+				<s_article_protected>
+					<s_index_article_rep>
+						<div class="article">
+							<h4>
+								<a href="[##_article_rep_link_##]">
+									<i class="glyphicon glyphicon-lock"></i>
+									[##_article_rep_title_##]
+								</a>
+							</h4>
+							<h6>
+								<a href="[##_article_rep_category_link_##]">
+									<i class="glyphicon glyphicon-th-list"></i> [##_article_rep_category_##]
+								</a> 
+							</h6>
+							<h6>
+								<i class="glyphicon glyphicon-time"></i> [##_article_rep_date_##]
+							</h6>
+						</div>
+					</s_index_article_rep>
+					<s_permalink_article_rep>
+						<div class="article">
+							<div class="page-header">
+								<h1>
+									<i class="glyphicon glyphicon-lock"></i> [##_article_rep_title_##]
+								</h1>
+								<h6><a href="[##_article_rep_category_link_##]"><i class="glyphicon glyphicon-th-list"></i> [##_article_rep_category_##]</a> <i class="glyphicon glyphicon-time"></i> [##_article_rep_date_##]</h6>
+							</div>
+							<div class="article-pager">
+								<form onsubmit="[##_article_dissolve_##]">
+									<p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+									<div class="row">
+										<div class="col-xs-9">
+											<input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value="" placeholder="비밀번호" class="form-control"/>
+										</div>
+										<div class="col-xs-3 text-right">
+											<button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-ok"></i></button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<s_tag_label>
+								<h5 class="article-tags margin-bottom-30"><i class="glyphicon glyphicon-tags"></i>
+									[##_tag_label_rep_##]
+								</h5>
+							</s_tag_label>
+						</div>
+					</s_permalink_article_rep>
+				</s_article_protected>
+
+				<s_article_rep>
+					<s_index_article_rep>
+						<div class="article">
+							<s_article_rep_thumbnail>
+								<img src="[##_article_rep_thumbnail_url_##]" class="img-rounded thumbnail pull-right">
+							</s_article_rep_thumbnail>
+							<h4>
+								<a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a>
+							</h4>
+							<h6>
+								<a href="[##_article_rep_category_link_##]"><i class="glyphicon glyphicon-th-list"></i> [##_article_rep_category_##]</a> 
+							</h6>
+							<h6>
+								<i class="glyphicon glyphicon-time"></i> [##_article_rep_date_##]
+							</h6>
+							<div class="clearfix"></div>
+						</div>
+					</s_index_article_rep>
+
+					<s_permalink_article_rep>
+						<div class="article">
+							<div class="page-header">
+								<h2>
+									[##_article_rep_title_##]
+								</h2>
+								<div class="row">
+									<div class="col-sm-6">
+										<h6><a href="[##_article_rep_category_link_##]"><i class="glyphicon glyphicon-th-list"></i> [##_article_rep_category_##]</a> <i class="glyphicon glyphicon-time"></i> [##_article_rep_date_##]</h6>
+									</div>
+									<div class="col-sm-6 text-right">
+										<s_ad_div>
+											<div class="btn-group btn-group-sm" role="group">
+												<a href="[##_s_ad_m_link_##]" class="btn btn-primary" title="수정"><i class="glyphicon glyphicon-pencil"></i></a>
+												<a href="#" onclick="[##_s_ad_m_onclick_##]" class="btn btn-primary" title="수정 창모드"><i class="glyphicon glyphicon-edit"></i></a>
+												<a class="btn btn-primary" title="발행 상태"><i class="glyphicon glyphicon-eye-open"></i> [##_s_ad_s1_label_##]</a>
+												<a href="#" onclick="[##_s_ad_s2_onclick_##]" class="btn btn-primary" title="[##_s_ad_s2_label_##]"><i class="glyphicon glyphicon-eye-close"></i></a>
+												<a href="#" onclick="[##_s_ad_d_onclick_##]" class="btn btn-primary" title="삭제"><i class="glyphicon glyphicon-trash"></i></a>
+											</div>
+										</s_ad_div>
+									</div>
+								</div>
+							</div>
+							<div class="article-pager">
+								<p>[##_article_rep_desc_##]</p>
+							</div>
+							<s_tag_label>
+								<h5 class="article-tags margin-bottom-30"><i class="glyphicon glyphicon-tags"></i>
+									[##_tag_label_rep_##]
+								</h5>
+							</s_tag_label>
+
+							<div class="margin-bottom-20">
+								<a href="#rp" onclick="[##_article_rep_rp_link_##]" class="btn btn-primary">
+									<i class="glyphicon glyphicon-comment"></i> 댓글 <span class="badge"><s_rp_count>[##_article_rep_rp_cnt_##]</s_rp_count></span>
+								</a>
+							</div>
+
+							<s_rp>
+								<s_rp_container>
+									<ul class="media-list">
+										<s_rp_rep>
+											<li id="[##_rp_rep_id_##]" class="media [##_rp_rep_class_##]">
+												<div class="media-left">
+													<img src="[##_rp_rep_logo_##]" class="media-object img-circle" width="50"/>
+												</div>
+												<div class="media-body">
+													<div class="row">
+														<div class="col-sm-6">
+															<h5 class="media-heading">
+																[##_rp_rep_name_##]
+																<small><i class="glyphicon glyphicon-time"></i> [##_rp_rep_date_##]</small>
+															</h5>
+														</div>
+														<div class="col-sm-6 text-right">
+															<div class="btn-group btn-group-xs" role="group">
+																<a href="[##_rp_rep_link_##]" class="btn btn-primary" title="댓글주소"><i class="glyphicon glyphicon-link"></i></a>
+																<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="btn btn-primary" title="수정/삭제"><i class="glyphicon glyphicon-edit"></i></a>
+																<a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="btn btn-primary" title="댓글쓰기"><i class="glyphicon glyphicon-comment"></i></a>
+															</div>
+														</div>
+													</div>
+													<p>[##_rp_rep_desc_##]</p>
+
+													<s_rp2_container>
+														<s_rp2_rep>
+															<div class="media [##_rp_rep_class_##]" id='[##_rp_rep_id_##]'>
+																<div class="media-left">
+																	<img src="[##_rp_rep_logo_##]" class="media-object img-circle" width="50"/>
+																</div>
+																<div class="media-body">
+																	<div class="row">
+																		<div class="col-sm-6">
+																			<h5 class="media-heading">
+																				[##_rp_rep_name_##]
+																				<small>
+																					<i class="glyphicon glyphicon-time"></i> [##_rp_rep_date_##]
+																				</small>
+																			</h5>
+																		</div>
+																		<div class="col-sm-6 text-right">
+																			<div class="btn-group btn-group-xs">
+																			<a href="[##_rp_rep_link_##]" class="btn btn-primary" title="댓글주소"><i class="glyphicon glyphicon-link"></i></a>	
+																			<a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="btn btn-primary" title="수정/삭제"><i class="glyphicon glyphicon-edit"></i></a>
+																			</div>
+																		</div>
+																	</div>
+																	<p>[##_rp_rep_desc_##]</p>
+																</div>
+															</div>
+														</s_rp2_rep>
+													</s_rp2_container>
+												</div>
+											</li>
+										</s_rp_rep>
+									</ul>
+								</s_rp_container>
+
+								<s_rp_input_form>
+									<div class="margin-bottom-10">
+										<textarea name="[##_rp_input_comment_##]" rows="10" cols="50" class="form-control" placeholder="댓글 입력창"></textarea>
+									</div>
+									<s_rp_member>
+										<s_rp_guest>
+											<div class="row">
+												<div class="col-xs-6">
+													<input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="이름" class="form-control"/>
+												</div>
+												<div class="col-xs-6">
+													<input type="password" maxlength="8" name="[##_rp_input_password_##]" value="[##_rp_admin_check_##]" placeholder="비밀번호" class="form-control"/>
+												</div>
+											</div>
+										</s_rp_guest>
+										<div class="checkbox">
+											<label for="[##_rp_input_is_secret_##]">
+												<input type="checkbox" name="[##_rp_input_is_secret_##]" class="checkbox"/>
+												비밀
+											</label>
+										</div>
+									</s_rp_member>
+									<button type="submit" onclick="[##_rp_onclick_submit_##]" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-comment"></i> 댓글 달기</button>
+									<div class="clearfix"></div>
+								</s_rp_input_form>
+
+							</s_rp>
+						</div>
+					</s_permalink_article_rep>
+				</s_article_rep>
+
+				<s_tag>
+					<div class="article">
+						<h4><i class="glyphicon glyphicon-tags"></i> 태그</h4>
+						<s_tag_rep>
+							<a href="[##_tag_link_##]" class="[##_tag_class_##]"><span class="label">[##_tag_name_##]</span></a>
+						</s_tag_rep>
+					</div>
+				</s_tag>
+
+				<s_guest>
+					<div class="article">
+						<h4>방명록</h4>
+						<div class="margin-bottom-20">
+							<s_guest_input_form>
+								<textarea name="[##_guest_textarea_body_##]" cols="50" rows="6" class="form-control margin-bottom-10" placeholder="발자취를 남겨주시고 응원해주세요!"></textarea>
+								<s_guest_member>
+									<s_guest_form>
+										<div class="row">
+											<div class="col-xs-6">
+												<input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" class="form-control" placeholder="이름">
+											</div>
+											<div class="col-xs-6">
+												<input type="password" maxlength="8" name="[##_guest_input_password_##]" value="[##_guest_password_##]" class="form-control" placeholder="비밀번호">
+											</div>
+										</div>
+									</s_guest_form>
+									<div class="checkbox">
+										<label for="[##_guest_input_is_secret_##]">
+											<input type="checkbox" name="[##_guest_input_is_secret_##]" class="checkbox"/>
+											비밀
+										</label>
+									</div>
+								</s_guest_member>
+								<button type="submit" onclick="[##_guest_onclick_submit_##]" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-envelope"></i> 방명록 남기기</button>
+								<div class="clearfix"></div>
+							</s_guest_input_form>
+						</div>
+
+						<s_guest_container>
+							<ul class="media-list">
+								<s_guest_rep>
+									<li id='[##_guest_rep_id_##]' class="media [##_guest_rep_class_##]">
+										<div class="media-left">
+
+										</div>
+										<div class="media-body">
+											<div class="row">
+												<div class="col-sm-6">
+													<h5 class="media-heading">
+														[##_guest_rep_name_##]
+														<small><i class="glyphicon glyphicon-time" ></i> [##_guest_rep_date_##]</small>
+													</h5>
+												</div>
+												<div class="col-sm-6 text-right">
+													<div class="btn-group btn-group-xs" role="group">
+													<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="btn btn-primary" title="수정/삭제"><i class="glyphicon glyphicon-edit"></i></a>
+													<a href="#" onclick="[##_guest_rep_onclick_reply_##]" class="btn btn-primary" title="댓글쓰기"><i class="glyphicon glyphicon-comment"></i></a>
+													</div>
+												</div>
+											</div>
+											<p>[##_guest_rep_desc_##]</p>
+											<s_guest_reply_container>
+												<s_guest_reply_rep>
+													<div id='[##_guest_rep_id_##]' class="media [##_guest_rep_class_##]">
+														<div class="media-left">
+														</div>
+														<div class="media-body">
+															<div class="row">
+																<div class="col-sm-6">
+																	<h5 class="media-heading">
+																		[##_guest_rep_name_##]
+																		<small><i class="glyphicon glyphicon-time"></i> [##_guest_rep_date_##]</small>
+																	</h5>
+																</div>
+																<div class="col-sm-6 text-right">
+																	<a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="btn btn-primary btn-xs" title="수정/삭제"><i class="glyphicon glyphicon-edit"></i></a>
+																</div>
+															</div>
+															<p>[##_guest_rep_desc_##]</p>
+														</div>
+													</div>
+												</s_guest_reply_rep>
+											</s_guest_reply_container>
+										</div>
+									</li>
+								</s_guest_rep>
+							</ul>
+						</s_guest_container>
+					</div>
+				</s_guest>
+				<s_paging>
+					<nav aria-label="Page navigation" class="article-pager pull-right">
+						<ul class="pagination">
+							<li>
+								<a [##_prev_page_##] aria-label="Previous" class="[##_no_more_prev_##]">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<s_paging_rep>
+								<li>
+									<a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a>
+								</li>
+							</s_paging_rep>
+							<li>
+								<a [##_next_page_##] aria-label="Next" class="[##_no_more_next_##]">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="clearfix"></div>
+				</s_paging>
+			</section>
+
+			<section class="container margin-bottom-20" id="sidebar">
+				<div class="article">
+					<div class="row">
+						<s_sidebar>
+						<s_sidebar_element>
+							<!-- 최근에 올라온 글 -->
+							<div class="col-sm-6">
+								<div class="well">
+									<h3 class="margin-top-0 pull-left" title="최근에 올라온 글"><i class="glyphicon glyphicon-list-alt"></i></h3>
+									<ul class="list-style-none">
+										<s_rctps_rep>
+											<li>
+												<a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+												<small>[##_rctps_rep_rp_cnt_##]</small>
+											</li>
+										</s_rctps_rep>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</s_sidebar_element>
+
+						<s_sidebar_element>
+							<!-- 최근에 달린 댓글 -->
+							<div class="col-sm-6">
+								<div class="well">
+									<h3 class="margin-top-0 pull-left" title="최근에 달린 댓글"><i class="glyphicon glyphicon-comment"></i></h3>
+									<ul class="list-style-none">
+										<s_rctrp_rep>
+											<li>
+												<a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##]</a>
+												<small class="pull-right">
+													<i class="glyphicon glyphicon-user"></i> [##_rctrp_rep_name_##]
+													<i class="glyphicon glyphicon-time"></i> [##_rctrp_rep_time_##]
+												</small>
+											</li>
+										</s_rctrp_rep>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</s_sidebar_element>
+
+						<s_sidebar_element>
+							<!-- tag cloud -->
+							<div class="col-sm-6">
+								<div class="well">
+									<h3 class="margin-top-0 pull-left" title="태그"><i class="glyphicon glyphicon-tags"></i></h3>
+									<div style="padding-left:30px">
+										<s_random_tags>
+											<a href="[##_tag_link_##]" class="[##_tag_class_##]">
+												<span class="label">[##_tag_name_##]</span>
+											</a>
+										</s_random_tags>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</s_sidebar_element>
+
+						<s_sidebar_element>
+							<!-- 글 보관함 -->
+							<div class="col-xs-6 col-sm-3">
+								<div class="well">
+									<h3 class="margin-top-0 pull-left" title="글 보관함"><i class="glyphicon glyphicon-folder-open"></i></h3>
+									<ul style="list-style:none">
+										<s_archive_rep>
+											<li>
+												<a href="[##_archive_rep_link_##]">[##_archive_rep_date_##] </a>
+												<span class="badge">[##_archive_rep_count_##]</span>
+											</li>
+										</s_archive_rep>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</s_sidebar_element>
+
+						<s_sidebar_element>
+							<!-- 방문자수 -->
+							<div class="col-xs-6 col-sm-3">
+								<div class="well">
+									<h3 class="pull-left" title="방문자 수" style="margin-top:0"><i class="glyphicon glyphicon-signal"></i></h3>
+									<div style="padding-left:40px">
+										오늘 <span class="badge">[##_count_today_##]</span><br/>
+										어제 <span class="badge">[##_count_yesterday_##]</span><br/>
+										전체 <span class="badge">[##_count_total_##]</span><br/>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</s_sidebar_element>
+						</s_sidebar>
+					</div>
+				</div>
+			</section>
+
+			<section class="container text-center margin-bottom-10" id="footer">
+				<div class="article">
+					Powered by <a href="http://www.tistory.com/" onclick="window.open(this.href); return false">[##_tattertools_name_##] [##_tattertools_version_##]</a><br/>
+					Designed by <a href="//dgkim5360.tistory.com" target="_blank">동건</a>
+				</div> 
+			</section>
+		</s_t3>
+
+		<!--[if lt IE 9]>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<![endif]-->
+		<!--[if gte IE 9]><!-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="./images/bootstrap.min.js"></script>
+		<script src="./images/script.min.js"></script>
+	</body>
+</html>
