@@ -1,5 +1,5 @@
 $(function() {
-	$("[href=#tab-header]").on("click", function() {
+	$("#close-tab").on("click", function() {
 		$("[href=#tab-search]").closest("li").removeClass("active");
 	});
 	$("[href=#tab-search]").on("shown.bs.tab", function() {

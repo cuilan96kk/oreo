@@ -1,18 +1,18 @@
 # Oreo
 _a responsive skin for Tistory Blog_
 
-###설치방법
+### 설치방법
 * github에서 다운로드
 * 티스토리 블로그 관리창에서 적용시키기
  1. 다음 경로로 이동: 꾸미기 -- 스킨 -- 스킨등록
  2. oreo/oreo 폴더에 있는 내용물을 모두 업로드 및 저장 후 적용
 
-###사용한 패키지
+### 사용한 패키지
 1. [Jquery](https://jquery.com)
 2. [Bootstrap](http://getbootstrap.com)
 
-###Release Log
-####ver 0.2
+### Release Log
+#### ver 0.2
 * Font Awesome 제거, 대신 Bootstrap glyphicon으로 대체
 * 유지 보수 가능한 선에서 최소화(minify)
 * 폴더 구조 변경
@@ -20,7 +20,7 @@ _a responsive skin for Tistory Blog_
  2. verbose 폴더 추가: 직접 편집하기 쉽도록 최소화되지 않은 파일을 추가
 * 버튼 그룹 디자인 반영
 
-####ver 0.1
+#### ver 0.1
 Bootstrap 커스텀 스타일 사용
 * 상단 헤더
  1. 좌측 블로거 썸네일, 우측 메뉴(공지, 태그, 방명록, 검색, RSS)
